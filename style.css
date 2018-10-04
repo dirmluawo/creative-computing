@@ -7,7 +7,7 @@
 body {
     background: #000000;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Heebo', sans-serif;
 }
 
@@ -16,7 +16,7 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
-    padding: 0px;
+    padding: 20px;
 }
 
 .grid-item-text {
