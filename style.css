@@ -38,3 +38,10 @@ a:hover {
 .heading {
     color: red;
 }
+
+h1 {
+    font-size: 150px;
+    line-height: -20;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+}
