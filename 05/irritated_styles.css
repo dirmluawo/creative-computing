@@ -1,0 +1,273 @@
+.grid-container {
+    height: 50vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: repeat(5, 70px);
+    grid-template-rows: repeat(5, 70px);
+    justify-self: center;
+}
+
+.square {
+    height: 70px;
+    width: 70px;
+}
+
+.a {
+    grid-row: 1 / 5;
+    grid-column: 1 / 5;
+    background-color: #81cac8;
+}
+
+.b {
+    grid-row: 1 / 5;
+    grid-column: 2 / 5;
+    background-color: #9cd0b0;
+}
+
+.c {
+    grid-row: 1 / 5;
+    grid-column: 3 / 5;
+    background-color: #bbd998;
+}
+
+.d {
+    grid-row: 1 / 5;
+    grid-column: 4 / 5;
+    background-color: #d7de81;
+}
+
+.e {
+    grid-row: 1 / 5;
+    grid-column: 5 / 5;
+    background-color: #f3e56b;
+}
+
+.f {
+    grid-row: 2 / 5;
+    grid-column: 1 / 5;
+    background-color: #6db2c8;
+}
+
+.g {
+    grid-row: 2 / 5;
+    grid-column: 2 / 5;
+    background-color: #8fb9b2;
+}
+
+.h {
+    grid-row: 2 / 5;
+    grid-column: 3 / 5;
+    background-color: #b1c297;
+}
+
+.i {
+    grid-row: 2 / 5;
+    grid-column: 4 / 5;
+    background-color: #718cb4;
+}
+
+.j {
+    grid-row: 2 / 5;
+    grid-column: 5 / 5;
+    background-color: #f6d067;
+}
+
+.k {
+    grid-row: 3 / 5;
+    grid-column: 1 / 5;
+    background-color: #589acc;
+}
+
+.l {
+    grid-row: 3 / 5;
+    grid-column: 2 / 5;
+    background-color: #7fa2b2;
+}
+
+.m {
+    grid-row: 3 / 5;
+    grid-column: 3 / 5;
+    background-color: #a7ab97;
+}
+
+.n {
+    grid-row: 3 / 5;
+    grid-column: 4 / 5;
+    background-color: #cfb57d;
+}
+
+.o {
+    grid-row: 3 / 5;
+    grid-column: 5 / 5;
+    background-color: #f5ab63;
+}
+
+.p {
+    grid-row: 4 / 5;
+    grid-column: 1 / 5;
+    background-color: #4982c3;
+}
+
+.q {
+    grid-row: 4 / 5;
+    grid-column: 2 / 5;
+    background-color: #d1c77c;
+}
+
+.r {
+    grid-row: 4 / 5;
+    grid-column: 3 / 5;
+    background-color: #9b9798;
+}
+
+.s {
+    grid-row: 4 / 5;
+    grid-column: 4 / 5;
+    background-color: #c79f7d;
+}
+
+.t {
+    grid-row: 4 / 5;
+    grid-column: 5 / 5;
+    background-color: #f79963;
+}
+
+.u {
+    grid-row: 5 / 5;
+    grid-column: 1 / 5;
+    background-color: #406ab3;
+}
+
+.v {
+    grid-row: 5 / 5;
+    grid-column: 2 / 5;
+    background-color: #6177b8;
+}
+
+.w {
+    grid-row: 5 / 5;
+    grid-column: 3 / 5;
+    background-color: #928198;
+}
+
+.x {
+    grid-row: 5 / 5;
+    grid-column: 4 / 5;
+    background-color: #c18d79;
+}
+
+.y {
+    grid-row: 5 / 5;
+    grid-column: 5 / 5;
+    background-color: #f3855e;
+}
+
+.grid-container-text {
+    height: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.grid-item-text {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(1, 30px);
+    justify-self: center;
+}
+
+body {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Heebo', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+@-webkit-keyframes flipInX {
+    from {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+  
+    to {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+    }
+  }
+  
+  @keyframes flipInX {
+    from {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+  
+    to {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+    }
+  }
+  
+  .flipInX {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+    animation-duration: 3s;
+  }
