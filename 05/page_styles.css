@@ -14,10 +14,6 @@ a:hover {
     color: red;
 }
 
-.heading {
-    color: red;
-}
-
 .grid-container-text {
     height: 30px;
     display: flex;
