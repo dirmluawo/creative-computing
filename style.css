@@ -8,7 +8,10 @@ body {
     background: #000000;
     text-align: center;
     font-size: 30px;
-    font-family: 'Heebo', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 30px; font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700;
 }
 
 .grid-container-text {
@@ -21,7 +24,7 @@ body {
 
 .grid-item-text {
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(4, 200px);
     grid-template-rows: repeat(1, 30px);
     justify-self: center;
 }
@@ -42,6 +45,6 @@ a:hover {
 h1 {
     font-size: 150px;
     line-height: -20;
-    font-family: 'Heebo', sans-serif;
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
     text-align: center;
 }
