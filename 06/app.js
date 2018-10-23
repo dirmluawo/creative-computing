@@ -1,12 +1,12 @@
 const messageWrapper = document.getElementById('message');
 
-var a = prompt ('Input a number to mutliply');
-var b = prompt ('Input another number to mutliply');
-var c = prompt ('Input a number to add');
-var d = prompt ('Input a number to subtract');
+const a = prompt ('Input a number to mutliply');
+const b = prompt ('Input another number to mutliply');
+const c = prompt ('Input a number to add');
+const d = prompt ('Input a number to subtract');
 
-var x = (a * b) + c - d;
+const x = (a * b) + c - d;
 
-let message = x;
+let message = a + ' * ' + b + ' + ' + c + ' - ' + d + ' = ' + x;
     
 messageWrapper.innerText = message;
