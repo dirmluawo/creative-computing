@@ -7,6 +7,6 @@ const d = prompt ('Input a number to subtract');
 
 const x = (a * b) + c - d;
 
-let message = a + ' * ' + b + ' + ' + c + ' - ' + d + ' = ' + x;
+let message = '(' + a + ' * ' + b + ') + ' + c + ' - ' + d + ' = ' + x;
     
 messageWrapper.innerText = message;
