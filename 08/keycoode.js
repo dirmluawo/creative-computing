@@ -59,17 +59,8 @@ document.onkeyup = function (event) {
 
 document.onclick = function (event){
 
-    function random_bg_color() {
-    var x = Math.floor(Math.random() * 256);
-    var y = Math.floor(Math.random() * 256);
-    var z = Math.floor(Math.random() * 256);
-    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-     console.log(bgColor);
-  
-    document.body.style.background = bgColor;
-    }
-
-random_bg_color();
+    document.body.className = 'animated';
+   
 }
 
     const helpers = {
@@ -86,7 +77,7 @@ random_bg_color();
         return { x, y };
       },
 
-generateRandomColorString: (alpha = true) => {
+    //generateRandomColorString: (alpha = true) => {
        // random RBG values
         const r = Math.floor(Math.random() * 255);
         const g = Math.floor(Math.random() * 255);

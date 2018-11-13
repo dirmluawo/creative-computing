@@ -10,3 +10,27 @@ body {
 .canvas {
     align-content: center;
  }
+
+ .animated {
+    -webkit-animation: colorchange 10s infinite;
+    animation: colorchange 10s infinite;
+  }
+  
+  
+  @keyframes colorchange
+  {
+    0%   {background: #F9423A;}
+    25%  {background: #FDDA24;}
+    50%  {background: blue;}
+    75%  {background: green;}
+    100% {background: red;}
+  }
+  
+  @-webkit-keyframes colorchange
+  {
+    0%   {background: red;}
+    25%  {background: yellow;}
+    50%  {background: blue;}
+    75%  {background: green;}
+    100% {background: red;}
+  }
