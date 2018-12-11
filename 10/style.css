@@ -1,0 +1,149 @@
+.container-text {
+    height: 30px;
+    width: auto;
+    display: flex;
+    align-content: center;
+    justify-content: stretch|space-between;
+    justify-content:space-between; 
+    padding: 30px;
+    position: fixed;
+}
+
+#sophomores {
+    overflow: hidden;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+#parsons {
+    width: 120px;
+    position: fixed;
+}
+
+#scholars {
+    width: 130px;
+    position: fixed;
+    right:30px;
+}
+
+.body-container{
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 3s 0s ease-in-out;
+}
+
+section.active{
+    display: fixed;
+    opacity: 1;
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    max-width:500px;
+    margin: 0 auto;
+    line-height: 1;
+    color: red;
+}
+
+p {
+    max-width:500px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+}
+
+#section-1 {
+    background-image: url(psp_sophomores.jpg);
+    fill-opacity: .5;
+    background-size: cover;
+    background-position: center center;
+}
+
+#section-1 p {
+    max-width:500px;
+    margin: 0 auto;
+    line-height: 1;
+    font-family: 'Cardo', serif;
+}
+
+#section-2 {
+    background-image: url(2018-09-22_16_44_57.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#section-2 p{
+    transition: all 3s ease-out;
+}
+
+#section-3 {
+    background-image: url(1024x768.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#section-4 {
+    display: block;
+}
+
+/* external css: flickity.css */
+
+/* * { box-sizing: border-box; } */
+
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+    align-content: center;
+    width: 90%;
+    height: 500px;
+    margin-top: 50px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    padding-top: 30px;
+}
+
+.first {
+    background-image: url(IMG_1913.JPG);
+}
+
+.second {
+    background-image: url(2018-12-03_12_10_53.png);
+}
+
+.third {
+    background-image: url(2018-11-17.jpg);
+    position: center center;
+}
+/* cell number
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+} */
